@@ -1,0 +1,37 @@
+.box{
+    border: 1px solid black;
+    height: 200px;
+    width: 150px;
+    background-image: linear-gradient(red,green);
+    background-image: linear-gradient(to right,red,orange);
+    background-image: linear-gradient(to bottom,rgba(12,3,4,0));
+    /* background-image: linear-gradient(45deg ,orange,blue,red,green);*/
+} 
+.mydiv{
+    border:  1px solid black;
+    margin: 30px;
+    width: 150px;
+    height: 100px;
+    background-image: radial-gradient(  circle,red 5%,green 15%,orange 50%,blue 20%,pink 30%);
+    box-shadow: -10px -10px 10px red,20px 20px 20px gold;
+    color: green; 
+}
+.mydiv3{
+    text-shadow: 5px 5px 5px red;
+    /* text-shadow: 5px 5px 5px red,60px 60px  green; */
+}
+.maxhe{
+    border: 1px solid black;
+    margin-left: 50px;
+    margin-bottom: 50px;
+    max-height: 100px;
+    max-width: 300px;
+    overflow:auto;
+    box-shadow: 10px 10px 10px green;
+}
+.aec{
+    background-color: aqua;
+    transform:translate(50px,100px);
+    /* transform: rotate(-40deg);
+    transform: scale(1); */
+}
