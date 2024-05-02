@@ -1,13 +1,15 @@
 .container{
     background-color: brown;
     height: 700px;
-    border: 3px solid black;
+    width: 504px;
+    border: 1px solid black;
     display: grid;
    /* grid-template-rows: 30px 150px 400px 30px;
     grid-template-columns: 400px;
 grid-template-areas: "hd" "side" "main" "ft"; */
-grid-template-columns: 200px 400px;
-grid-template-rows: 30px 500px 30px;
+grid-template-columns: 100px 400px;
+grid-template-rows: 30px 1fr 30px;
+grid-gap: 4px;
 grid-template-areas: "hd hd" "side main" "ft ft";
 }
 #header{
