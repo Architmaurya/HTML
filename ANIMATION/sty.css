@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+:root{
+    --dark-red:red;
+    --dark-green:green;
+}
+.container{
+    border: 1px solid black;
+    background-color: blue;
+    height: 300px;
+    width: 300px;
+    background-color: var(--dark-red);
+}
+.box{
+    border: 1px solid red;
+    background-color: aqua;
+    color:var(--dark-green)
+}
