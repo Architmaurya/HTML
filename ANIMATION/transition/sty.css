@@ -16,7 +16,7 @@
     transition-delay: 4s; */
     /* transition: transform 1s ease 3s;
     transition: width 1s ease 3s; */
-    transition: all 1s cubic-bezier(0.74,-0.33, 0.55, 1.53) 3s;
+    transition: all 1s ease-in 3s;
 }
 .box:hover{
   width: 300px;

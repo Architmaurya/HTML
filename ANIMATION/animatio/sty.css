@@ -1,0 +1,49 @@
+.container{
+    width: 100%;
+    background-color: yellow;
+    border: 2px solid red;
+    height: 212
+}
+.box{
+    width:212px;
+    height: 212px;
+    background-color: aqua;
+    border: 2px solid green;
+
+    animation-name: archit;
+    animation-duration: 3s;
+    animation-iteration-count: 1
+    ;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    /* animation-direction:normal; */
+    animation-fill-mode: forwards;
+
+}
+@keyframes archit{
+    0%{
+        width: 212px;
+    }
+    30%{
+        width: 35%;
+        background-color:orange;
+    }
+    60%{
+        width:70% ;
+        background-color:white;
+    }
+    100%{
+        width: 100%;
+        background-color: green;
+    }
+}
+/* @keyframes archit{
+    from{
+        width: 212px;
+        height: 212px;
+    }
+    to{
+        width: 800px;
+        /* height: 800px; 
+    }
+} */
