@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 :root{
     --bgOrange:#e84949;
@@ -25,13 +25,14 @@
     display: flex;
     justify-content: baseline;
     align-items: center;
+    gap: 10px;
 }
 .logo-text{
-    margin-left: -1.2rem;
-    font-size: 28px;
+    margin-left: -1.3rem;
+    font-size: 30px;
 }
 .logo{
-    width: 80px;
+    width: 70px;
 }
 .nav-items{
     display: flex;
@@ -269,7 +270,7 @@ a{
 .project-card{
     width: 90%;
     height: 550px;
-    background-image: url(image/Project2.png);
+    background-image: url(image/Project1.png);
     background-size:cover ;
     /* background-repeat: no-repeat; */
     position: relative;
@@ -308,6 +309,11 @@ a{
     font-weight: 600;
     color: white;
     z-index: 10;
+    display: none;
+    transition: 0.3s;
+}
+.project-card:hover .project-number{
+    display: block;
 }
 .project-number-right{
     right: -40px;
@@ -319,4 +325,289 @@ a{
 }
 .project-content{
     position: absolute;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    padding: 2em;
+    bottom: 20%;
+    z-index: 5;
+    gap: 1em;
+    transition: all 0.4s;
+}
+.project-content-left{
+    left: 10%;
+}
+.project-content-right{
+    right: 10%;
+}
+.project-skill-container{
+    width: 60%;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.project-skill{
+    width: 40px;
+}
+.project-heading{
+    font-size: 50px;
+    font-weight: bold;
+    line-height: 3rem;
+}
+.project-subheading{
+    width: 70%;
+    font-size: 16px;
+    font-style: italic;
+}
+.btn-grp{
+    display: flex;
+    gap: 0.9rem;
+    align-items: center;
+}
+.icon{
+    cursor: pointer;
+    color: white;
+    font-size: 35px;
+    transition: 0.4s;
+}
+.icon:hover{
+    color: var(--bgOrange);
+}
+.project-card:hover .project-content{
+    transform: scale(1.1);
+}
+#project1{
+    background-image: url(image/Project1.png);
+}
+#project2{
+    margin-left: 120px;
+    background-image: url(image/Project2.png);
+}
+#project3{
+    background-image: url(image/Project3.png);
+}
+#project4{
+    margin-left: 120px;
+    background-image: url(image/Project4.png);
+}
+
+@media (max-width:1300px) {
+    .page-header {
+      padding-top: 30px;
+      color: var(--bgOrange);
+      text-align: center;
+      font-size: 40px;
+    }
+    .project-container {
+      padding: 5px;
+      margin: 10px;
+      gap: 60px;
+    }
+    .project-card {
+      width: 100%;
+      height: 300px;
+    }
+    .project-card {
+      background-size: cover;
+      background-position: center;
+    }
+    .project-content {
+      scale: 0.5;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      top: 0;
+    }
+    .project-content-left {
+      left: 0;
+    }
+    .project-heading {
+      font-size: 40px;
+      width: 100%;
+    }
+    .project-sub-heading {
+      width: 100%;
+    }
+    #project2 {
+      margin-left: 0;
+    }
+    #project4 {
+      margin-left: 0;
+    }
+    .project-skill-container {
+      width: 100%;
+    }
+    .project-skill {
+      width: 35px;
+    }
+    .project-card:hover .project-number {
+      display: none;
+    }
+    .project-card:hover .project-content {
+      scale: 0.55;
+    }
+  }
+  .skills-container{
+    position: relative;
+    display: flex;
+    padding: 5rem;
+    margin: 10rem auto;
+    gap: 30px;
+  }
+  .skill-container-left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+  }
+  .skill-container-right{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    position: relative;
+    gap: 2rem;
+    justify-content: center;
+  }
+  .skill-fade-text{
+    position: absolute;
+    user-select: none;
+    font-size: 15em;
+    font-style: bold;
+    color:rgb(231,231,231);
+    bottom:-34.5% ;
+    right: -15%;
+    /* overflow-x: hidden; */
+  }
+  .blob-style{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    animation: blob 3s linear infinite;
+    z-index: -5;
+  }
+  @keyframes blob {
+    50%{
+        top: 54%;
+        left: 56%
+    }    
+  }
+  .skills-logo{
+    width: 80px;
+    transition: all 0.5s;
+  }
+  .skills-logo:hover{
+    transform: scale(1.2);
+  }
+  .skill-heading{
+    font-size: 50px;
+    font-style: bold;
+    color: var(--bgOrange);
+    line-height: 50px;
+  }
+  .caps{
+    font-size: 80px;
+  }
+  .skill-subheading{
+    margin-top: 1rem;
+    width: 85%;
+    text-align: justify;
+  }
+  .skill-subheading p{
+    margin: 15px 0;
+  }
+  .contactus-form-container{
+    width: 100%;
+    background-color: rgb(231,231,231);
+  }
+.contectus-heading{
+    font-size: 5em;
+    color: var(--bgOrange);
+    padding-top:2rem;
+}
+.contactus-sub-heading{
+    font-size: 3rem;
+    color: #343d68aa;
+    text-transform: capitalize;
+}
+.contactus-from-container{
+    margin: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.from{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin: 2rem 5rem;
+}
+.fromfield-container{
+    width: 100%;
+}
+.fromfield{
+    width: 100%;
+    height: 42px;
+    padding: 0 2rem;
+    font-size: 18px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px #1f1f1f;
+    font-weight: 500;
+    border: none;
+    margin-top: 27px;
+}
+.formfield-textarea{
+    height: auto;
+    padding-top: 1rem;
+}
+#submit-btn{
+    /* border: none; */
+    font-size: 1.4rem;
+    margin: 1rem 0;
+}
+#submit-btn:hover{
+    scale: 0.9;
+}
+.submit-icon{
+    padding: 0 1rem;
+    font-size: 1.5rem;
+}
+footer{
+    position: relative;
+    margin-top: -1px;
+    background-color: #343d68;
+    padding: 5rem;
+}
+.footer-wrapper{
+    display: flex;
+    gap: 1rem;
+    padding: 1.2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-faded-text{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    color: #535c87;
+    user-select: none;
+    font-size: 5rem;
+}
+.link-wrapper{
+    display: flex;
+    gap: 1.2rem;
+}
+.link-wrapper div a{
+    color: white;
+    text-decoration: none;
+    transition: all 0.6s;
+}
+.link-wrapper div a:hover{
+    color: var(--bgOrange);
+}
+.icon-wrapper{
+    display: flex;
+    gap: 1rem;
+}
+*{
+    scroll-behavior: smooth;
 }
